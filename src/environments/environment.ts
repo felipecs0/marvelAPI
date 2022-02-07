@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://gateway.marvel.com/v1/public/',
-  apiKey: 'ed5accb8c7697714ac1dbf1c7584c3c0',
+  apiUrl: 'http://gateway.marvel.com/v1/public',
+  apiKey: '98e4e27021cee48e5831e0997f611b82',
   settings: {
     appErrorPrefix: '[Angular Heroes Error] ',
     appTitle: 'MarvelSearch',

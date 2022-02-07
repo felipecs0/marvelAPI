@@ -19,7 +19,7 @@ export class MarvelService {
 
   getCharterId(characterId: number): Observable<any> {
     return this.http
-      .get<any>(`${environment.apiUrl}characters/${characterId}`)
+      .get<any>(`${environment.apiUrl}/characters/${characterId}`)
       .pipe(
         pluck('data','results'),
         catchError(this.baseService.handleError)
