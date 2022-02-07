@@ -1,0 +1,15 @@
+<div class="container">
+  <section *ngFor="let hero of HeroList" class="card">
+    <div class="titulo">
+        <div>{{hero.name}}</div>
+    </div>
+    <div>
+      <figure>
+        <img class="thumbnail" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}"/>
+      </figure>
+    </div>
+    <div class="footer">
+      <button class="primary-button" [routerLink]="['detalhes',hero.id]" >Mais Informações</button>
+    </div>
+  </section>
+</div>
